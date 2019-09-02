@@ -1,0 +1,29 @@
+{
+    "name": "fatal-error-online/insurance-policy",
+    "type": "library",
+    "description": "Insurance Policy generation",
+    "keywords": ["insurance","policy"],
+    "homepage": "https://github.com/FatalErrorOnline/insurance-policy",
+    "authors": [
+        {
+            "name": "Andrey",
+            "email": "andrey@uma.ru",
+            "homepage": "http://www.fatal-error.online/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+           "php": "~7.2",
+           "phpoffice/phpspreadsheet": "^1.9",
+           "mpdf/mpdf": ">=8",
+	   "ext-gd": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+	"psr-4": {
+	    "FatalErrorOnline\\Controllers\\": "./src/controllers",
+	    "FatalErrorOnline\\Models\\": "./src/models",
+	    "FatalErrorOnline\\App\\": "./src/app"
+	}
+    }
+}
